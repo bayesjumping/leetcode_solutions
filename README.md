@@ -1,4 +1,4 @@
-# leet-code-solutions
+# LeetCode Solutions
 
 These are some solutions to LeetCode problems as I work through them.
 

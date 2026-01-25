@@ -1,4 +1,4 @@
-from src.hashmap.group_anagrams import group_anagrams
+from src.hash_map.group_anagrams import group_anagrams
 
 class TestGroupAnagrams:
     def test_basic_anagrams(self):
