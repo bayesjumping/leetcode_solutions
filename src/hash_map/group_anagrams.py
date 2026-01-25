@@ -1,12 +1,13 @@
 from collections import defaultdict
+from typing import Iterable
 
 
-def group_anagrams(strs: list[str]) -> list[list[str]]:
+def group_anagrams(strings: Iterable[str]) -> list[list[str]]:
     """
     Group anagrams together from a list of strings.
     
     Args:
-        strs: List of strings to group by anagrams
+        strings: Iterable of strings to group by anagrams
         
     Returns:
         List of grouped anagrams
@@ -16,7 +17,7 @@ def group_anagrams(strs: list[str]) -> list[list[str]]:
         [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
     """
     anagram_map = defaultdict(list)
-    for s in strs:
-        sorted_s = "".join(sorted(s))
-        anagram_map[sorted_s].append(s)
+    for word in strings:
+        key = "".join(sorted(word))
+        anagram_map[key].append(word)
     return list(anagram_map.values())
