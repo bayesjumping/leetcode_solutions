@@ -1,12 +1,6 @@
 from typing import Optional
 
-
-class ListNode:
-    """Definition for singly-linked list node."""
-
-    def __init__(self, val: int = 0, next: Optional["ListNode"] = None) -> None:
-        self.val = val
-        self.next = next
+from .helpers import ListNode
 
 
 def reverse_list(head: Optional[ListNode]) -> Optional[ListNode]:

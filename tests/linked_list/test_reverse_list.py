@@ -1,32 +1,5 @@
-from typing import Optional
-
-from src.linked_list.reverse_list import reverse_list, ListNode
-
-
-def list_to_array(head: Optional[ListNode]) -> list[int]:
-    """Helper function to convert linked list to array for testing"""
-    if head is None:
-        return []
-
-    result = []
-    curr = head
-    while curr:
-        result.append(curr.val)
-        curr = curr.next
-    return result
-
-
-def array_to_list(arr: list[int]) -> ListNode:
-    """Helper function to create linked list from array"""
-    if not arr:
-        return None
-    
-    head = ListNode(arr[0])
-    curr = head
-    for val in arr[1:]:
-        curr.next = ListNode(val)
-        curr = curr.next
-    return head
+from src.linked_list.reverse_list import reverse_list
+from src.linked_list.helpers import ListNode, list_to_array, array_to_list
 
 
 def test_basic_reversal():
