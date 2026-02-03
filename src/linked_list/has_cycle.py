@@ -1,4 +1,8 @@
-def has_cycle(head):
+from typing import Optional
+from .helpers import ListNode
+
+
+def has_cycle(head: Optional[ListNode]) -> bool:
     """
     Detect if a linked list contains a cycle using Floyd's algorithm.
     
