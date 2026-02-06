@@ -1,4 +1,5 @@
 # LeetCode Solutions
+![Tests](https://github.com/bayesjumping/leetcode_solutions/actions/workflows/tests.yml/badge.svg) [![codecov](https://codecov.io/gh/bayesjumping/leetcode_solutions/branch/main/graph/badge.svg)](https://codecov.io/gh/bayesjumping/leetcode_solutions)
 
 These are some solutions to LeetCode problems as I work through them.
 

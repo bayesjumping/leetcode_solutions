@@ -26,7 +26,7 @@ test:
 
 # Run tests with coverage
 test-cov:
-	.venv/bin/pytest tests/ -v --cov=src --cov-report=term-missing
+	.venv/bin/pytest tests/ -v --cov=src --cov-report=term-missing --cov-report=xml
 
 # Run linter
 lint:
